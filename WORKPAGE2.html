@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การ์ตูน | BLACKREAD</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #050505;
+            color: white;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            background: #000;
+            border-bottom: 2px solid #e02b2f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            width: 92%;
+            max-width: 1200px;
+            min-height: 72px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #e02b2f;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            background: #e02b2f;
+        }
+
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background:
+                radial-gradient(circle, rgba(224,43,47,.25), transparent 40%),
+                #111;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            text-shadow: 4px 4px #b91f24;
+        }
+
+        .hero p {
+            color: #b9b9b9;
+            margin-top: 15px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title h2 {
+            font-size: 42px;
+        }
+
+        .title span {
+            color: #e02b2f;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 28px;
+            background: #181818;
+            border: 1px solid #333;
+            border-top: 5px solid #e02b2f;
+            border-radius: 15px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #b9b9b9;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 20px;
+            background: #e02b2f;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 30px;
+            background: #000;
+            color: #b9b9b9;
+            border-top: 2px solid #e02b2f;
+            text-align: center;
+        }
+
+        @media(max-width:800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            BLACK<span>READ</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="workpage1.html">หนังสือทั่วไป</a></li>
+            <li><a href="workpage2.html" class="active">การ์ตูน</a></li>
+            <li><a href="workpage3.html">อนิเมะ</a></li>
+            <li><a href="workpage4.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>การ์ตูน</h1>
+    <p>
+        รวมการ์ตูนยอดนิยม การ์ตูนแนะนำ
+        และรีวิวสั้น ๆ
+    </p>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="grid">
+
+            <article class="card">
+                <h3>🔥 การ์ตูนยอดนิยม</h3>
+                <p>
+                    รวมการ์ตูนที่ได้รับความสนใจ
+                    และเป็นที่นิยมในหมู่ผู้อ่าน
+                </p>
+
+                <a href="#popular" class="button">
+                    ดูเพิ่มเติม
+                </a>
+            </article>
+
+            <article class="card">
+                <h3>📚 การ์ตูนแนะนำ</h3>
+                <p>
+                    คัดเลือกการ์ตูนน่าสนใจ
+                    สำหรับคนที่กำลังมองหาเรื่องใหม่ ๆ
+                </p>
+
+                <a href="#recommend" class="button">
+                    ดูเพิ่มเติม
+                </a>
+            </article>
+
+            <article class="card">
+                <h3>⭐ รีวิวสั้น ๆ</h3>
+                <p>
+                    รีวิวเนื้อหาและจุดเด่น
+                    ของการ์ตูนแต่ละเรื่องแบบกระชับ
+                </p>
+
+                <a href="#review" class="button">
+                    อ่านรีวิว
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section id="popular">
+    <div class="container">
+
+        <div class="title">
+            <h2>การ์ตูน<span>ยอดนิยม</span></h2>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>การ์ตูนยอดนิยม 01</h3>
+                <p>เพิ่มข้อมูลและเรื่องย่อของการ์ตูนที่ต้องการแนะนำ</p>
+                <img src="https://www.bing.com/th/id/OIP.XvO-gGkHzpbBk7ZgTBjDAgHaJQ?w=180&h=225&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"  style="width:100%; height:250px; object-fit:contain;">
+            </div>
+
+            <div class="card">
+                <h3>การ์ตูนยอดนิยม 02</h3>
+                <p>เพิ่มข้อมูลและเรื่องย่อของการ์ตูนที่ต้องการแนะนำ</p>
+                <img src="https://down-th.img.susercontent.com/file/th-11134207-7r991-lsjbhezlv931a2"  style="width:100%; height:250px; object-fit:contain;">
+            </div>
+
+            <div class="card">
+                <h3>การ์ตูนยอดนิยม 03</h3>
+                <p>เพิ่มข้อมูลและเรื่องย่อของการ์ตูนที่ต้องการแนะนำ</p>
+                <img src="https://th.bing.com/th/id/OIP.jRDASw0SQlfC8stW3PiEsAHaHa?w=201&h=200&c=7&r=0&o=7&pid=1.7&rm=3"  style="width:100%; height:250px; object-fit:contain;">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="recommend">
+    <div class="container">
+
+        <div class="title">
+            <h2>การ์ตูน<span>แนะนำ</span></h2>
+        </div>
+
+        <div class="card">
+            <h3>📖 การ์ตูนที่น่าสนใจ</h3>
+            <p>
+                เพิ่มข้อมูลการ์ตูนที่ต้องการแนะนำ
+                พร้อมเรื่องย่อและรายละเอียดเพิ่มเติม
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="review">
+    <div class="container">
+
+        <div class="title">
+            <h2>รีวิว<span>สั้น ๆ</span></h2>
+        </div>
+
+        <div class="card">
+            <h3>⭐ รีวิวการ์ตูน</h3>
+            <p>
+                เขียนความคิดเห็น จุดเด่น
+                และความน่าสนใจของการ์ตูนแต่ละเรื่อง
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p><strong>BLACKREAD</strong> เว็บไซต์ส่งเสริมการอ่าน</p>
+    <p>© 2026 BLACKREAD</p>
+</footer>
+
+</body>
+</html>
